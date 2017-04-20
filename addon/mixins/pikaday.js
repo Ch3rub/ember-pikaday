@@ -85,6 +85,7 @@ export default Ember.Mixin.create({
   },
 
   willDestroyElement() {
+    this._super(...arguments)
     this.get('pikaday').destroy();
   },
 
